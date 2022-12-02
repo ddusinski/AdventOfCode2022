@@ -1,6 +1,6 @@
 package com.dusinski;
 
-import com.dusinski.solutions.day1.CalorieCounting;
+import com.dusinski.solutions.day2.RockPaperScissors;
 
 import java.io.IOException;
 
@@ -10,9 +10,10 @@ import java.io.IOException;
 public class AoC2022 {
     public static void main(String[] args) throws IOException {
         System.out.println("Hello AoC 2022!");
-
-//        System.out.println("69501: " + CalorieCounting.getMostTotalCalories());
-        System.out.println("202346: " + CalorieCounting.getTopThreeTotalCalories()); //33748740
+//        System.out.println("15: " + RockPaperScissors.getTotalStoreOfRPS("day2_test.txt"));
+//        System.out.println("15523: " + RockPaperScissors.getTotalStoreOfRPS("day2.txt"));
+//        System.out.println("12: " + RockPaperScissors.getTotalStoreOfRPSPart2("day2_test.txt"));
+        System.out.println("15702: " + RockPaperScissors.getTotalStoreOfRPSPart2("day2.txt"));
 
     }
 }
