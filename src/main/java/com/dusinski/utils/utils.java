@@ -84,4 +84,8 @@ public class utils {
 
         return numbers;
     }
+
+    public void test(){
+        
+    }
 }
