@@ -2,6 +2,7 @@ package com.dusinski;
 
 import com.dusinski.solutions.day1.CalorieCounting;
 import com.dusinski.solutions.day2.RockPaperScissors;
+import com.dusinski.solutions.day3.RucksackReorganization;
 import junit.framework.TestCase;
 
 /**
@@ -19,6 +20,12 @@ public class AoC2022Test extends TestCase {
         assertEquals(15523, RockPaperScissors.getTotalStoreOfRPSPart1("day2.txt"));
         assertEquals(12, RockPaperScissors.getTotalStoreOfRPSPart2("day2_test.txt"));
         assertEquals(15702, RockPaperScissors.getTotalStoreOfRPSPart2("day2.txt"));
+    }
 
+    public void testD3_RucksackReorganization() {
+        assertEquals(157, RucksackReorganization.getSumOfPrioritiesPart1("day3_test.txt"));
+        assertEquals(7863, RucksackReorganization.getSumOfPrioritiesPart1("day3.txt"));
+        assertEquals(70, RucksackReorganization.getSumOfPrioritiesPart2("day3_test.txt"));
+        assertEquals(2488, RucksackReorganization.getSumOfPrioritiesPart2("day3.txt"));
     }
 }
