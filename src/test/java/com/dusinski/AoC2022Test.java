@@ -3,6 +3,7 @@ package com.dusinski;
 import com.dusinski.solutions.day1.CalorieCounting;
 import com.dusinski.solutions.day2.RockPaperScissors;
 import com.dusinski.solutions.day3.RucksackReorganization;
+import com.dusinski.solutions.day4.CampCleanup;
 import com.dusinski.solutions.day5.SupplyStack;
 import junit.framework.TestCase;
 
@@ -35,5 +36,12 @@ public class AoC2022Test extends TestCase {
         assertEquals("QPJPLMNNR", SupplyStack.getTopStacksAfterRearrangementPart1("day5.txt"));
         assertEquals("MCD", SupplyStack.getTopStacksAfterRearrangementPart2("day5_test.txt"));
         assertEquals("BQDNWJPVJ", SupplyStack.getTopStacksAfterRearrangementPart2("day5.txt"));
+    }
+
+    public void testD4_CampCleanup() {
+        assertEquals(2, CampCleanup.getFullyContainedAssignmentPairSumPart1("day4_test.txt"));
+        assertEquals(466, CampCleanup.getFullyContainedAssignmentPairSumPart1("day4.txt"));
+        assertEquals(4, CampCleanup.getFullyContainedAssignmentPairSumPart2("day4_test.txt"));
+        assertEquals(865, CampCleanup.getFullyContainedAssignmentPairSumPart2("day4.txt"));
     }
 }
