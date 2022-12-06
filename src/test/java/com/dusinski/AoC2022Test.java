@@ -5,6 +5,7 @@ import com.dusinski.solutions.day2.RockPaperScissors;
 import com.dusinski.solutions.day3.RucksackReorganization;
 import com.dusinski.solutions.day4.CampCleanup;
 import com.dusinski.solutions.day5.SupplyStack;
+import com.dusinski.solutions.day6.TuningTrouble;
 import junit.framework.TestCase;
 
 /**
@@ -44,4 +45,13 @@ public class AoC2022Test extends TestCase {
         assertEquals(4, CampCleanup.getFullyContainedAssignmentPairSumPart2("day4_test.txt"));
         assertEquals(865, CampCleanup.getFullyContainedAssignmentPairSumPart2("day4.txt"));
     }
+
+    public void testD6_TuningTrouble() {
+        assertEquals(11, TuningTrouble.getNumberOfProcessedCharactersPart1("day6_test.txt"));
+        assertEquals(1361, TuningTrouble.getNumberOfProcessedCharactersPart1("day6.txt"));
+        assertEquals(26, TuningTrouble.getNumberOfProcessedCharactersPart2("day6_test.txt"));
+        assertEquals(3263, TuningTrouble.getNumberOfProcessedCharactersPart2("day6.txt"));
+    }
+
+
 }
