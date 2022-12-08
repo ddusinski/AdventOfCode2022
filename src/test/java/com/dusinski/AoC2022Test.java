@@ -6,6 +6,7 @@ import com.dusinski.solutions.day3.RucksackReorganization;
 import com.dusinski.solutions.day4.CampCleanup;
 import com.dusinski.solutions.day5.SupplyStack;
 import com.dusinski.solutions.day6.TuningTrouble;
+import com.dusinski.solutions.day7.NoSpaceLeftOnDevice;
 import junit.framework.TestCase;
 
 /**
@@ -51,6 +52,14 @@ public class AoC2022Test extends TestCase {
         assertEquals(1361, TuningTrouble.getNumberOfProcessedCharactersPart1("day6.txt"));
         assertEquals(26, TuningTrouble.getNumberOfProcessedCharactersPart2("day6_test.txt"));
         assertEquals(3263, TuningTrouble.getNumberOfProcessedCharactersPart2("day6.txt"));
+    }
+
+    public void testD7_NoSpaceLeftOnDevice() {
+        assertEquals(95437, NoSpaceLeftOnDevice.getTotalSizeToRemovePart1("day7_test.txt"));
+        assertEquals(1306611, NoSpaceLeftOnDevice.getTotalSizeToRemovePart1("day7.txt"));
+        assertEquals(24933642, NoSpaceLeftOnDevice.getSmallestDirToBeDeletedPart2("day7_test.txt"));
+        assertEquals(13210366, NoSpaceLeftOnDevice.getSmallestDirToBeDeletedPart2("day7.txt"));
+
     }
 
 
