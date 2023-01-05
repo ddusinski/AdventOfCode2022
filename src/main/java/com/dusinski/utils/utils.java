@@ -81,7 +81,19 @@ public class utils {
         strings.forEach(s -> {
             numbers.add(Integer.parseInt(s));
         });
-
         return numbers;
     }
+
+    public static int[][] loadNumTwoDimArray(String resourceName) {
+        List<String> input = utils.loadStringList(resourceName);
+        int[][] result = new int[input.size()][input.get(0).length()];
+        for (int i = 0; i < input.size(); i++) {
+            for (int j = 0; j < input.get(i).length(); j++) {
+                result[i][j] = input.get(i).toCharArray()[j] - '0';
+            }
+        }
+
+        return result;
+    }
+
 }

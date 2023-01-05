@@ -7,6 +7,7 @@ import com.dusinski.solutions.day4.CampCleanup;
 import com.dusinski.solutions.day5.SupplyStack;
 import com.dusinski.solutions.day6.TuningTrouble;
 import com.dusinski.solutions.day7.NoSpaceLeftOnDevice;
+import com.dusinski.solutions.day8.TreetopTreeHouse;
 import junit.framework.TestCase;
 
 /**
@@ -59,8 +60,10 @@ public class AoC2022Test extends TestCase {
         assertEquals(1306611, NoSpaceLeftOnDevice.getTotalSizeToRemovePart1("day7.txt"));
         assertEquals(24933642, NoSpaceLeftOnDevice.getSmallestDirToBeDeletedPart2("day7_test.txt"));
         assertEquals(13210366, NoSpaceLeftOnDevice.getSmallestDirToBeDeletedPart2("day7.txt"));
-
     }
 
-
+    public void testD8_TreetopTreeHouse() {
+        assertEquals(21, TreetopTreeHouse.getHowManyTreesAreVisiblePart1VER2("day8_test.txt"));
+        assertEquals(1782, TreetopTreeHouse.getHowManyTreesAreVisiblePart1VER2("day8.txt"));
+    }
 }
